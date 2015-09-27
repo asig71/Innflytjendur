@@ -2,4 +2,3 @@ Code for shinyapp to plot various datasets
 
 Built on shinyapp from:Mason DeCamillis
 
-Put the the server.R file and ui.R in seperate files and click run app upper right corner
