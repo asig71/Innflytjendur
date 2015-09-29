@@ -1,1 +1,0 @@
-qplot(immCondensed$Year,immCondensed$`Nordic countries 1988`,data=immCondensed,color=immCondensed$Year,geom=c("point","Smooth"),xlab="Year",ylab="Immegrants arrived to Iceland 1988",main="Number of Immegrants staying in Iceland from 1988")
