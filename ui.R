@@ -7,7 +7,7 @@ library(shinyAce)
 shinyUI(
   
   pageWithSidebar(
-    headerPanel("ggplot Live"),
+    headerPanel("Immegrants in Iceland"),
     
     sidebarPanel(
       tabsetPanel(
