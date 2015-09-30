@@ -7,8 +7,7 @@ library(shinyAce)
 shinyUI(
   
   pageWithSidebar(
-    headerPanel("Immigrants in Iceland"),
-    
+    headerPanel(title="Immigrants in Iceland"),
     sidebarPanel(
       tabsetPanel(
         tabPanel("Editor", 
@@ -16,10 +15,6 @@ shinyUI(
                  aceEditor("plotCode", 
                            mode = "r", 
                            value = "ggplot(data = cars,\n    aes(x = speed, y = dist)) + \n    geom_line(col = 'red')")
-                 
-                 #downloadButton(
-                  # outputId = "downloadCode", 
-                   #label    = "Download Code")
         ),
         
         tabPanel("How To",
@@ -27,7 +22,6 @@ shinyUI(
                    h5("1. Upload your data file(s) in CSV format. You may use multiple files in your plot, but you must upload them one at a time."),
                    h5("2. Enter your ggplot2 code on the 'Editor' tab. Enter only the command to create your plot. All data manipulation should be done prior to using this app."),
                    h5("3. Click the 'Update Plot' button on the 'Plot' tab to see the results."),
-                   h5("4. If you need to consult ggplot2 docs or resources, use the links on the 'Debug' tab."),
                    p()
                  )
         )
@@ -101,9 +95,6 @@ shinyUI(
                    outputId = "downloadPlot", 
                    label    = "Download Plot")
         )
-        
-        
-        
       )
     )
   )
