@@ -7,7 +7,7 @@ library(shinyAce)
 shinyUI(
   
   pageWithSidebar(
-    headerPanel("Immegrants in Iceland"),
+    headerPanel("Immigrants in Iceland"),
     
     sidebarPanel(
       tabsetPanel(
