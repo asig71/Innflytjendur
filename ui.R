@@ -20,23 +20,9 @@ shinyUI(
                  downloadButton(
                    outputId = "downloadCode", 
                    label    = "Download Code")
-        ),
+        ))),
         
-        tabPanel("How To",
-                 list(
-                   h5("1. Upload your data file(s) in CSV format. You may use multiple files in your plot, but you must upload them one at a time."),
-                   h5("2. Enter your ggplot2 code on the 'Editor' tab. Enter only the command to create your plot. All data manipulation should be done prior to using this app."),
-                   h5("3. Click the 'Update Plot' button on the 'Plot' tab to see the results."),
-                   h5("4. If you need to consult ggplot2 docs or resources, use the links on the 'Debug' tab."),
-                   h5("5. Repeat steps 2-4 as necessary until the plot is complete."),
-                   h5("6. Download the plot using the options on the 'Download' tab."),
-                   h5("7. Download the code using the download button on the 'Editor' tab."),
-                   p()
-                 )
-        )
-      )
-      
-    ),
+       
     
     mainPanel(
       tabsetPanel(
