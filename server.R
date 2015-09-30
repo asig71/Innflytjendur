@@ -2,7 +2,8 @@
 library(ggplot2)
 library(shiny)
 library(shinyAce)
-
+library(pxweb)
+require(data.table)
 # Keep track of data with these entries for each upload:
 # 1. Name (filename with .csv stripped)
 # 2. Location (path on server to use)
@@ -18,6 +19,7 @@ shinyServer(
     #####
     # Code download
     #####
+    
     
     # Include a downloadable file of the plot in the output list.
     output$downloadCode <- downloadHandler(

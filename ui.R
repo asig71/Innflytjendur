@@ -34,9 +34,9 @@ shinyUI(
                    p()
                  )
         )
-      ),
+      )
       
-      ),
+    ),
     
     mainPanel(
       tabsetPanel(
@@ -105,10 +105,9 @@ shinyUI(
                    label    = "Download Plot")
         )
         
-
-                 
-        )
+        
+        
       )
     )
-      )
-  
+  )
+)
