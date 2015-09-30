@@ -15,11 +15,11 @@ shinyUI(
                  # Code editor window.
                  aceEditor("plotCode", 
                            mode = "r", 
-                           value = "ggplot(data = cars,\n    aes(x = speed, y = dist)) + \n    geom_line(col = 'red')"),
+                           value = "ggplot(data = cars,\n    aes(x = speed, y = dist)) + \n    geom_line(col = 'red')")
                  
-                 downloadButton(
-                   outputId = "downloadCode", 
-                   label    = "Download Code")
+                 #downloadButton(
+                  # outputId = "downloadCode", 
+                   #label    = "Download Code")
         ),
         
         tabPanel("How To",
